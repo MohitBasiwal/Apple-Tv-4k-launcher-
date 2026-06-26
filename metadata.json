@@ -1,0 +1,6 @@
+{
+  "name": "Frosted TV Launcher",
+  "description": "A custom Android TV home screen replacement designed with a premium, modern Frosted Glass aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
