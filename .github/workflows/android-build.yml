@@ -42,7 +42,14 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: '8.7'
-
+      - name: Force Upgrade Gradle Wrapper to 8.13
+        run: |
+          cd android
+          echo "distributionBase=GRADLE_USER_HOME" > gradle/wrapper/gradle-wrapper.properties
+          echo "distributionPath=wrapper/dists" >> gradle/wrapper/gradle-wrapper.properties
+          echo "distributionUrl=https\://services.gradle.org/distributions/gradle-8.13-all.zip" >> gradle/wrapper/gradle-wrapper.properties
+          echo "zipStoreBase=GRADLE_USER_HOME" >> gradle/wrapper/gradle-wrapper.properties
+          echo "zipStorePath=wrapper/dists" >> gradle/wrapper/gradle-wrapper.properties
       - name: Build APK
         working-directory: ./android
         run: gradle assembleDebug
