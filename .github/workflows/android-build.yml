@@ -41,7 +41,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: '8.7'
+          gradle-version: '8.13'
       - name: Force Upgrade Gradle Wrapper to 8.13
         run: |
           cd android
