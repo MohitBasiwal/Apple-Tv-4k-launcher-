@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-sdk tools:overrideLibrary="com.getcapacitor, org.apache.cordova" />
+    <uses-sdk tools:overrideLibrary="com.getcapacitor.android, capacitor.cordova.android.plugins, org.apache.cordova, androidx.core, androidx.appcompat, androidx.activity, androidx.fragment, androidx.coordinatorlayout, androidx.webkit, androidx.core.splashscreen" />
 
     <application
         android:allowBackup="true"
